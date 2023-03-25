@@ -1,0 +1,199 @@
+/* Universal Elements */
+@font-face {
+  font-family: satisfy;
+  src: url("imgs-and-fonts/Satisfy-Regular.ttf");
+}
+
+@font-face {
+  font-family: tajawal;
+  src: url("imgs-and-fonts/Tajawal-Bold.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #EACDC2;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+h1{
+  font-family: satisfy, cursive;
+  font-size: 3rem;
+  color: #372549;
+}
+
+h2{
+  font-family: tajawal, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  background-color: #EACDC2;
+  color: #EACDC2;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* header .nav {
+
+} */
+
+header .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  color: #372549;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: #B75D69;
+}
+
+/* Main */
+section {
+  background-color: #EACDC2;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+main {
+  position: relative;
+  top: 8.5rem; /* Offsets fixed header */
+}
+
+/* Mission */
+#mission p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Services */
+#portfolio {
+  background-image: url("imgs-and-fonts/music-composition.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#portfolio h2 {
+ color: #EACDC2;
+}
+
+.service {
+  width: 32rem;
+  padding-top: 1rem;
+  margin: 2rem;
+  background-color: #EACDC2;
+  flex-shrink: 1;
+}
+
+.service .image-container {
+  width: 30rem;
+  height: 28rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.service .image-container img {
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .service {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .service {
+    width: 24rem;
+  }
+
+  .service .image-container {
+    width: 22rem;
+    height: 20rem;
+  }
+}
+
+/* Team */
+#team .content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.member {
+  background-color: #EACDC2;
+  width: 20%;
+  flex-shrink: 1;
+}
+
+.member .image-container {
+  width: 90%;
+  margin: auto;
+}
+
+.member .image-container img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  #team .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 8rem;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.street-address,
+.phone-email {
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  footer {
+    flex-direction: column;
+  }
+}
